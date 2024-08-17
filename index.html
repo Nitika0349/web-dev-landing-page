@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMMBYBHQTtuY6u84x8k5R5NIREsJ1m_W0qw&s" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Web Development Overview</h1>
+        <p>Learn the essentials of web development and build your path to success!</p>
+        <a href="#roadmap" class="cta-button">Explore the Roadmap</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Web Development</h2>
+        <p>Web development is the art and science of creating websites and web applications that are accessible, interactive, and visually appealing on the internet. It involves a combination of coding, design, and problem-solving skills to build user-friendly experiences for people all around the world.</p>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <h2>Web Development Roadmap</h2>
+    
+        <h3>Front-End Web Development</h3>
+        <p>Front-end development focuses on the visual and interactive aspects of a website. It's all about what users see and interact with in their browsers. This includes everything from the layout, colors, and fonts to buttons, forms, and animations. Technologies like HTML, CSS, and JavaScript are the building blocks of front-end development.</p>
+        <div class="roadmap-item">
+            <h4>Introduction to HTML, CSS & JS</h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUSBGQP30GqkJzEQreZa9HXJlsBrWWf6afOg&s" alt="HTML, CSS & JS">
+            <p>Learn the basics of building web pages with HTML and CSS.</p>
+            <p>Understand the fundamentals of JavaScript to add interactivity to your web pages.</p>
+        </div>
+    
+        <h3>Back-End Web Development</h3>
+        <p>Back-end development is the behind-the-scenes work that makes websites function. It involves managing databases, servers, and application logic to ensure that everything runs smoothly. Back-end developers work with programming languages like Python, PHP, and Node.js to create the infrastructure that powers the front-end.</p>
+        <div class="roadmap-item">
+            <h4>Introduction to Server-Side Programming</h4>
+            <p>Explore server-side programming languages like Python, PHP, or Node.js.</p>
+        </div>
+        <div class="roadmap-item">
+            <h4>Database Management</h4>
+            <p>Learn about databases, SQL, and how to interact with them in your web applications.</p>
+        </div>
+        <div class="roadmap-item">
+            <h4>APIs and RESTful Services</h4>
+            <p>Understand how to create and consume APIs to connect different parts of your application.</p>
+        </div>
+    </section>
+    
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+            
+            <label for="feedback-message">Comments:</label>
+            <textarea id="feedback-message" name="feedback-message" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 WebDev Landing Page. All Rights Reserved.</p>
+        <div class="social-media">
+            <!-- Social Media Icons (Facebook, Twitter, LinkedIn, etc.) -->
+        </div>
+    </footer>
+</body>
+</html>
